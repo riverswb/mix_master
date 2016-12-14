@@ -2,4 +2,4 @@
 
 <%=image_tag @artist.image_path %>
 
-<%= link_to "Delete" 
+<%= link_to "Delete", artist_path(@artist), method: :delete %>

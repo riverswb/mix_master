@@ -3,6 +3,9 @@
 <% @artists.each do |artist| %>
   <h1><%= artist.name %> </h1><br />
   <%=image_tag artist.image_path %>
+  <%= link_to "Edit", edit_artist_path(artist) %>
 <% end %>
 
-<%= link_to "New artist", new_artist_path %>
+<h3>
+  <%= link_to "New artist", new_artist_path %>
+</h3>

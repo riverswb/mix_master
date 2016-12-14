@@ -10,5 +10,6 @@ RSpec.feature 'User views the artist\'s show page' do
 
     click_on "Delete"
     expect(page.current_path).to eq artists_path
+    expect(page).to_not have_content "The Avalanches"
   end
 end
